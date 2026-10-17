@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: #252d40;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #090b10;
+    color: #f1f5f9;
+    font-family: 'Inter', 'Be Vietnam Pro', system-ui, sans-serif;
+    user-select: none;
+  }
+
+  input,
+  textarea {
+    user-select: text;
+  }
+}
+
+/* Custom sleek scrollbars for media workspace */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252d40;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4764;
+}
